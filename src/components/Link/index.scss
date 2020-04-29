@@ -1,10 +1,11 @@
-@import "../../common/variables.scss";
+@import "../../index.scss";
 
 .app-link {
   font-size: 13px;
   letter-spacing: -0.01px;
   color: app-color("secondary");
   text-decoration: none;
+  font: regular 13px/22px Verdana;
   cursor: pointer;
 
   & > .anticon + span {

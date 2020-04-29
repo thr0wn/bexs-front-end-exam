@@ -1,5 +1,6 @@
 import React from "react";
+import Button from "./components/Button";
 
-const App = () => <div>It works!</div>;
+const App = () => <Button>It works!</Button>;
 
 export default App;

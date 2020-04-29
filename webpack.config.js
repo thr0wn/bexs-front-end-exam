@@ -10,6 +10,12 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: "file-loader",
+        },
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -18,7 +24,12 @@ module.exports = (env, argv) => ({
       },
       {
         test: /\.s?css$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "resolve-url-loader",
+          "sass-loader",
+        ],
       },
     ],
   },
