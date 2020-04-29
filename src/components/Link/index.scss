@@ -1,4 +1,4 @@
-@import "../../index";
+@import "../../common/variables.scss";
 
 .app-link {
   font-size: 13px;
@@ -6,4 +6,13 @@
   color: app-color("secondary");
   text-decoration: none;
   cursor: pointer;
+
+  & > .anticon + span {
+    margin-left: 14px;
+  }
+
+  &.ant-btn-background-ghost.ant-btn-link:hover,
+  &.ant-btn-background-ghost.ant-btn-link:focus {
+    color: app-color("secondary");
+  }
 }
