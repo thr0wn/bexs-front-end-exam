@@ -1,0 +1,9 @@
+@import "../../index";
+
+.app-link {
+  font-size: 13px;
+  letter-spacing: -0.01px;
+  color: app-color("secondary");
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -17,7 +17,7 @@ module.exports = (env, argv) => ({
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
@@ -28,7 +28,7 @@ module.exports = (env, argv) => ({
     }),
   ],
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".css"],
   },
   devtool: argv.mode !== "production" ? "source-map" : "",
   devServer: {
