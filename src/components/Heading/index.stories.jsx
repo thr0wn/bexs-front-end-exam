@@ -1,9 +1,9 @@
 import React from "react";
 import "antd/dist/antd.css";
-import Link from ".";
+import Heading from ".";
 
 export default {
-  title: "Componentes/Link",
+  title: "Componentes/Heading",
   decorators: [
     (storyFn) => (
       <div
@@ -19,4 +19,6 @@ export default {
   ],
 };
 
-export const Basic = () => <Link>Alterar forma de pagamento</Link>;
+export const Basic = () => (
+  <Heading>Adicione um novo cartão de crédito</Heading>
+);

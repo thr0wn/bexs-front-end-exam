@@ -1,0 +1,50 @@
+@import "../../index.scss";
+
+// dimensions
+$rccs-size: 365px;
+$rccs-card-ratio: 1.62;
+
+// background
+$rccs-default-background: transparent
+  url("../../../public/images/credit-card.png") 0% 0% no-repeat padding-box;
+$rccs-unknown-background: $rccs-default-background;
+$rccs-shadow: 0 0 20px rgba(#000, 0.2) !important;
+
+// fonts and colors
+$rccs-dark-text-color: app-color("secondary");
+$rccs-light-text-color: app-color("secondary");
+$rccs-name-font-size: 16px;
+$rccs-name-font-family: "SF Pro Text Regular";
+$rccs-number-font-size: 24px;
+$rccs-number-font-family: "SF Pro Text Regular";
+$rccs-valid-font-size: 16px;
+$rccs-expiry-font-size: 16px;
+$rccs-expiry-font-family: "SF Pro Text Regular";
+$rccs-cvc-font-size: 14px;
+$rccs-cvc-font-family: "SF Pro Text Regular";
+$rccs-cvc-color: #222;
+
+@import "react-credit-cards/es/styles.scss";
+
+.app-payment-card {
+  .rccs {
+    margin: 0;
+
+    .rccs__card--front,
+    .rccs__card--back {
+      border-radius: 8px;
+    }
+
+    .rccs__number,
+    .rccs__name,
+    .rccs__expiry,
+    .rccs__cvc {
+      opacity: 1;
+      text-shadow: 0px 1px 2px app-color('black');
+    }
+
+    .rccs__chip {
+        display: none;
+    }
+  }
+}

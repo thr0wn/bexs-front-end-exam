@@ -3,7 +3,7 @@ import Steps from ".";
 import "antd/dist/antd.css";
 
 export default {
-  title: "Steps",
+  title: "Componentes/Steps",
 };
 
 export const Basic = () => <Steps current={1} />;

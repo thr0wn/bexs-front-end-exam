@@ -3,7 +3,7 @@ import "antd/dist/antd.css";
 import Button from ".";
 
 export default {
-  title: "Button",
+  title: "Componentes/Button",
 };
 
 export const Basic = () => <Button>CONTINUAR</Button>;
