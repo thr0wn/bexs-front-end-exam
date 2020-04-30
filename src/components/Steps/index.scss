@@ -1,0 +1,46 @@
+@import "../../index.scss";
+
+.app-steps {
+  color: app-color("primary");
+  letter-spacing: -0.01px;
+
+  .ant-steps-item-title {
+    font-family: Verdana;
+    font-size: 13px;
+  }
+
+  .ant-steps-item
+    > .ant-steps-item-container
+    > .ant-steps-item-content
+    > .ant-steps-item-title {
+    color: app-color("primary");
+  }
+  .ant-steps-item-icon {
+    background: transparent;
+    border-color: app-color("primary");
+
+    & > .ant-steps-icon {
+      color: app-color("primary");
+    }
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background: app-color("primary");
+
+    & > .ant-steps-icon {
+      color: app-color("secondary");
+    }
+  }
+
+  .ant-steps-item {
+    cursor: pointer;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      border-color: app-color("primary");
+    }
+  }
+}

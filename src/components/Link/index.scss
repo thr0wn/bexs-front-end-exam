@@ -5,15 +5,17 @@
   letter-spacing: -0.01px;
   color: app-color("secondary");
   text-decoration: none;
-  font: regular 13px/22px Verdana;
+  font-family: Verdana;
+  font-size: 13px;
+  line-height: 36px;
   cursor: pointer;
 
   & > .anticon + span {
     margin-left: 14px;
   }
 
-  &.ant-btn-background-ghost.ant-btn-link:hover,
-  &.ant-btn-background-ghost.ant-btn-link:focus {
+  &.ant-btn-background-ghost:hover,
+  &.ant-btn-background-ghost:focus {
     color: app-color("secondary");
   }
 }
