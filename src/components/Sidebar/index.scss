@@ -1,0 +1,65 @@
+@import "../../index.scss";
+
+.app-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: app-color("primary");
+  width: 352px;
+  padding: 53px 0 64px 53px;
+  display: flex;
+  flex-direction: column;
+
+  .app-link {
+    margin-bottom: 54px;
+  }
+
+  .app-heading {
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 0 0;
+    width: 100vw;
+    height: 239px;
+    align-items: center;
+
+    .app-link {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+
+      .anticon-left {
+        position: absolute;
+        left: 15px;
+        font-size: 21px;
+      }
+    }
+
+    .app-heading {
+      max-width: 220px;
+      margin-bottom: 16px;
+
+      .ant-typography {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .app-title__svg {
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        min-width: 40px;
+      }
+    }
+
+    .app-payment-card {
+      transform-origin: top center;
+      transform: scale(0.7672);
+    }
+  }
+}

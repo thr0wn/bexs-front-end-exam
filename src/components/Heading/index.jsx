@@ -7,7 +7,7 @@ import "./index.scss";
 const { Title } = Typography;
 
 const Heading = ({ children, className, ...otherProps }) => (
-  <div className={classnames(className, "app-title")} {...otherProps}>
+  <div className={classnames(className, "app-heading")} {...otherProps}>
     <img className="app-title__svg" src={CardSVGIcon} />
     <Title>{children}</Title>
   </div>
