@@ -9,7 +9,7 @@
     "lint": "eslint src/**/*",
     "format": "./node_modules/.bin/prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o dist-storybook"
+    "build-storybook": "build-storybook -c .storybook -o dist/storybook"
   },
   "repository": {
     "type": "git",
