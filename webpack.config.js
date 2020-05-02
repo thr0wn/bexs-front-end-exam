@@ -10,7 +10,7 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
         use: {
           loader: "file-loader",
         },
@@ -31,10 +31,6 @@ module.exports = (env, argv) => ({
           "sass-loader",
         ],
       },
-      {
-        test: /\.svg$/,
-        loader: "svg-inline-loader",
-      },
     ],
   },
   plugins: [
@@ -44,8 +40,11 @@ module.exports = (env, argv) => ({
   ],
   resolve: {
     extensions: [".js", ".jsx", ".css"],
+    alias: {
+      moment$: path.resolve(__dirname, "node_modules/moment/moment.js"),
+    },
   },
-  devtool: argv.mode !== "production" ? "source-map" : "",
+  devtool: argv.mode !== "production" ? "source-map" : undefined,
   devServer: {
     contentBase: path.join(__dirname, "public"),
     compress: true,

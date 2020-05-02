@@ -7,7 +7,7 @@ const PaymentCard = ({
   className,
   cvc,
   expiry,
-  focus,
+  focused,
   name,
   number,
   ...otherProps
@@ -16,7 +16,7 @@ const PaymentCard = ({
     <Cards
       cvc={cvc || ""}
       expiry={expiry || ""}
-      focus={focus || ""}
+      focused={focused || ""}
       name={name || ""}
       number={number || ""}
       placeholders={{

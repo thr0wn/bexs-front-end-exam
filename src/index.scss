@@ -7,18 +7,6 @@
   src: url("../public/fonts/SF-Pro-Text-Semibold.otf") format("opentype");
 }
 
-$app-colors: (
-  "primary": #de4b4b,
-  "secondary": #ffffff,
-  "tertiary": #c9c9c9,
-  "black": #000000b3,
-  "grey": #191919,
-);
-
-@function app-color($key: "primary") {
-  @return map-get($app-colors, $key);
-}
-
 body {
   font-family: Verdana;
   letter-spacing: 0px;

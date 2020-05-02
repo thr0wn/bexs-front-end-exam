@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./components/Button";
+import Checkout from "./components/Checkout";
 
-const App = () => <Button>It works!</Button>;
+const App = () => <Checkout />
 
 export default App;

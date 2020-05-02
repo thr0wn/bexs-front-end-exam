@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../base.scss";
 
 .app-sidebar {
   position: fixed;
@@ -21,6 +21,9 @@
 
   @media (max-width: 768px) {
     padding: 40px 0 0 0;
+    position: static;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 239px;
     align-items: center;
@@ -32,6 +35,7 @@
       justify-content: center;
       width: 100%;
       position: relative;
+      line-height: 1;
 
       .anticon-left {
         position: absolute;
@@ -59,7 +63,7 @@
 
     .app-payment-card {
       transform-origin: top center;
-      transform: scale(0.7672);
+      transform: scale(calc(0.7672));
     }
   }
 }

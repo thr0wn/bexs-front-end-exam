@@ -1,0 +1,13 @@
+@import "../../base.scss";
+
+.app-checkout {
+  padding: 56px 64px 56px 512px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+
+    &__content-wrapper {
+      padding: 111px 40px 40px;
+    }
+  }
+}
