@@ -26,6 +26,11 @@ npm install
 npm start
 ```
 
+### Rodar o storybook localmente
+```bash
+npm run storybook
+```
+
 ### Build
 ```bash
 npm run build
