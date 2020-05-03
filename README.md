@@ -1,46 +1,71 @@
 # Exame - Bexs Front-end
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c198d0e-0f14-4690-ba01-bfb24345cf75/deploy-status)](https://app.netlify.com/sites/relaxed-kowalevski-2f0a93/deploys)
 
-## Desafio
+[![](https://img.shields.io/badge/-React.js-blue?logo=react)]()
+[![](https://img.shields.io/badge/-Storybook-blue?logo=Storybook)]()
 
-Desenvolver uma aplicação front-end de acordo com as especificações descritas nos **requisitos** utilizando a _stack_ tecnologica de sua preferencia.
+[![Code Style](https://badgen.net/badge/code%20style/airbnb/ff5a5f?icon=airbnb)](https://github.com/airbnb/javascript)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-- Desenvolva este Layout: https://xd.adobe.com/spec/9c4a9206-ac61-4050-796d-89c00fb79e91-ea7b
-- Utilize a tecnologia de sua preferencia (ReactJs, Angular, Angularjs, Vue.js, Jquery, Bootstrap, Material, Nodejs, Java, C#, PHP, etc).
 
-## Como entregar sua solução?
+Demo: https://relaxed-kowalevski-2f0a93.netlify.app
 
-1. Clone do repositório
+Storybook Demo: https://relaxed-kowalevski-2f0a93.netlify.app/storybook
 
-2. Tente explicar a evolução do projeto em _commits_.
+[![](http://i.imgur.com/BxzSZW9.png)]()
 
-3. Caso use algum _task runner_/_module bundle_ - faça o commit da ultima versão build/bundle.
-
-4. Para nos enviar seu teste escolha uma das formas:
-
-### Gerar um patch:
-
-Para gerar o patch:
-
-```
-git format-patch origin/master --stdout > seu_nome.patch
+## Comandos
+---
+### Instalar dependências
+```bash
+npm install
 ```
 
-Certifique que o patch irá funcionar executando >> `git apply seu_nome.patch` e nos envie através do email que entramos em contato
+### Rodar localmente
+```bash
+npm start
+```
 
-### Criando um repositório público:
+### Build
+```bash
+npm run build
+```
 
-Crie um repositório em uma plataforma de pública de repositórios (GitHub, BitBucket, GitLab, etc) e nos envie através do email que entramos em contato.
+### Build do storybook
+```bash
+npm run build-storybook
+```
 
-## Requisitos
+## Estrutura do projeto
+---
+```
+project
+└───src
+│   └───components (Componentes usados pela página de Checkout)
+│   │   └───Link
+│   │   │   │   index.jsx (Marcação + Javascript)
+│   │   │   │   index.scss (Estilos)
+│   │   │   │   index.stories.jsx (Stories para documentação no storybook)
+│   │   │   
+│   │   └───...
+│   │
+│   └───pages (Página de Checkout)
+│       └───Checkout
+│           │   index.jsx (Marcação + Javascript)
+│           │   index.scss (Estilos)
+│           │   index.stories.jsx (Stories para documentação no storybook)
+│
+└───public (Assets usados no teste)
+    │   index.html
+    │   fonts
+    │   icons
+    │   images
+```
 
-- Faça códigos legiveis e utilize uma arquitetura de fácil entendimento.
-- Edite este Readme ou crie um novo Markdown explicando como um DEV deveria utilizar o projeto
+## Candidato
+---
+Linkedin: https://www.linkedin.com/in/natan-dos-santos-camargos-7b8153122/
 
-## Bonus
+Github: https://github.com/thr0wn
 
-- Testes automatizados.
-- Crie uma camada que efetue uma chamada REST para um endpoint fictício "/pagar" - iremos analisar apenas a estrutura
-
-## Dúvidas
-
-Entre em contato e nos questione.
+Stack Overflow: https://stackoverflow.com/users/6489712/natan-camargos

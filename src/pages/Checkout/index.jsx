@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Form } from "antd";
 import classnames from "classnames";
 import valid from "card-validator";
-import Sidebar from "../Sidebar";
-import Heading from "../Heading";
-import Link from "../Link";
-import PaymentCard from "../PaymentCard";
+import Sidebar from "../../components/Sidebar";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import PaymentCard from "../../components/PaymentCard";
 import CheckoutContent from "./CheckoutContent";
 import "./index.scss";
 

@@ -4,9 +4,9 @@ import { Row, Col, Tooltip } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import classnames from "classnames";
 import moment from "moment";
-import { Input, InputNumber } from "../../Input";
-import Steps from "../../Steps";
-import Button from "../../Button";
+import { Input, InputNumber } from "../../../components/Input";
+import Steps from "../../../components/Steps";
+import Button from "../../../components/Button";
 import "./index.scss";
 
 const CheckoutContent = ({
@@ -136,7 +136,7 @@ const CheckoutContent = ({
                   maxLength={3}
                   label={
                     <span>
-                      CVC <InfoCircleOutlined />
+                      CVV <InfoCircleOutlined />
                     </span>
                   }
                   onFocus={onFocus}
