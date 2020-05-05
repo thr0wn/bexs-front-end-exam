@@ -13,7 +13,7 @@ Demo: https://relaxed-kowalevski-2f0a93.netlify.app
 Storybook Demo: https://relaxed-kowalevski-2f0a93.netlify.app/storybook
 
 [![](http://i.imgur.com/BxzSZW9.png)]()
-[![](http://i.imgur.com/GwyLbux.mp4)]()
+[![](http://i.imgur.com/QZb09sd.gif)]()
 
 ## Comandos
 ---
