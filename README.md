@@ -13,6 +13,7 @@ Demo: https://relaxed-kowalevski-2f0a93.netlify.app
 Storybook Demo: https://relaxed-kowalevski-2f0a93.netlify.app/storybook
 
 [![](http://i.imgur.com/BxzSZW9.png)]()
+[![](http://i.imgur.com/GwyLbux.mp4)]()
 
 ## Comandos
 ---
@@ -29,6 +30,11 @@ npm start
 ### Rodar o storybook localmente
 ```bash
 npm run storybook
+```
+
+### Testes e2e
+```bash
+npm run test
 ```
 
 ### Build

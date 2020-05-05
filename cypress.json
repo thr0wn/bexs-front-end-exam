@@ -1,0 +1,10 @@
+{
+    "integrationFolder": "e2e/integration",
+    "pluginFile": "e2e/plugins/index.js",
+    "fixturesFolder": "e2e/fixtures",
+    "supportFile": "e2e/support/index.js",
+    "videosFolder": "e2e/__videos__/",
+    "screenshotsFolder": "e2e/__screenshots__/",
+    "viewportHeight": 800,
+    "viewportWidth": 1200
+}

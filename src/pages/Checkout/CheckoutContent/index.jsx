@@ -122,7 +122,7 @@ const CheckoutContent = ({
                     validator: (_, value) => {
                       if (!value) {
                         return Promise.resolve();
-                      } else if (value.length !== 1) {
+                      } else if (value.length === 3) {
                         return Promise.resolve();
                       } else {
                         return Promise.reject("Código inválido");

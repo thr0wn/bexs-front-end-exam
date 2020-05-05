@@ -9,6 +9,7 @@
     "lint": "eslint src/**/*",
     "format": "./node_modules/.bin/prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "storybook": "start-storybook -p 6006",
+    "test": "cypress run",
     "build-storybook": "build-storybook -c .storybook -o dist/storybook"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
+    "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-airbnb-base": "^14.1.0",
