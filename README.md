@@ -3,6 +3,7 @@
 
 [![](https://img.shields.io/badge/-React.js-blue?logo=react)]()
 [![](https://img.shields.io/badge/-Storybook-blue?logo=Storybook)]()
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
 [![Code Style](https://badgen.net/badge/code%20style/airbnb/ff5a5f?icon=airbnb)](https://github.com/airbnb/javascript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -12,8 +13,8 @@ Demo: https://relaxed-kowalevski-2f0a93.netlify.app
 
 Storybook Demo: https://relaxed-kowalevski-2f0a93.netlify.app/storybook
 
-[![](http://i.imgur.com/BxzSZW9.png)]()
-[![](http://i.imgur.com/QZb09sd.gif)]()
+[![](http://i.imgur.com/BxzSZW9.png)](https://relaxed-kowalevski-2f0a93.netlify.app)
+[![](http://i.imgur.com/QZb09sd.gif)](http://i.imgur.com/QZb09sd.gif)
 
 ## Comandos
 ---
@@ -35,6 +36,11 @@ npm run storybook
 ### Testes e2e
 ```bash
 npm run test
+```
+
+Também é possível rodar os testes através do `Cypress Test Runner`:
+```bash
+npx cypress open
 ```
 
 ### Build
